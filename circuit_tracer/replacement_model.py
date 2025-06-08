@@ -126,7 +126,7 @@ class ReplacementModel(HookedTransformer):
         cls,
         model_name: str,
         transcoder_set: str,
-        device: Optional[torch.device] = torch.device("cuda"),
+        device: Optional[torch.device] = torch.device("cpu"),
         dtype: Optional[torch.dtype] = torch.float32,
         **kwargs,
     ) -> "ReplacementModel":
